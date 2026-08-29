@@ -25,7 +25,7 @@ await connectDB();
 await connectCloudinary();
 
 // Allow multiple origins
-const allowedOrigins = ['http://localhost:5173', 'https://stylic-pk.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173', 'https://stylic-pk.vercel.app'];
 
 // Stripe Webhooks Route (must be BEFORE express.json())
 app.post('/stripe', express.raw({ type: 'application/json' }), stripeWebhooks);
