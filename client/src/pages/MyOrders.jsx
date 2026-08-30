@@ -25,7 +25,7 @@ const MyOrders = () => {
   return (
     <div className='mt-16 pb-16'>
       <div className='flex flex-col items-end w-max mb-8'>
-        <p className='section-heading text-4xl uppercase'>My orders</p>
+        <p className='section-heading uppercase'>My orders</p>
         <div className='w-16 h-0.5 bg-primary rounded-full'></div>
       </div>
 
@@ -49,7 +49,7 @@ const MyOrders = () => {
                   <img src={item.product.image[0]} alt={item.product.name} className='w-16 h-16' />
                 </div>
                 <div className='ml-4'>
-                  <h2 className='font-display text-[1.9rem] leading-[1.05] tracking-[-0.02em] text-gray-800'>{item.product.name}</h2>
+                  <h2 className='product-name text-gray-800'>{item.product.name}</h2>
                   <p>Category: {item.product.category}</p>
                 </div>
               </div>

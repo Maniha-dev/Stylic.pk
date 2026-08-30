@@ -10,7 +10,11 @@ const MainBanner = () => {
             <img src={assets.main_banner_bg_sm} alt="banner" className=" w-full  md:hidden"/>
             <div className='absolute inset-0 flex flex-col items-center md:items-start justify-end md:justify-center pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24'>
             <h1 className='hero-heading text-center md:text-left max-w-72 md:max-w-80 lg:max-w-[520px] text-primary'
-            >Where Every Little Detail Feels Like You</h1>
+            >Where Every Little
+            <br />
+            Detail Feels Like
+            <br />
+                You</h1>
           
           <div className='flex items-center mt-8 gap-3 font-medium'>
            <Link to={"/products"} className='group flex items-center gap-2 px-7 md:px-9 py-3 bg-primary hover:bg-primary-dull transition rounded text-white cursor-pointer font-body tracking-[0.12em] uppercase text-[11px]'>

@@ -58,40 +58,22 @@ const Cart = () => {
         return toast.error("Please select an address");
       }
 
-      // Place Order with COD
-      if (paymentOption === "COD") {
-        const { data } = await axios.post('/api/order/cod', {
-          userId: user._id,
-          items: cartArray.map((item) => ({
-            product: item._id,
-            quantity: item.quantity,
-          })),
-          address: selectedAddress._id,
-        });
+      const { data } = await axios.post('/api/order/cod', {
+        userId: user._id,
+        items: cartArray.map((item) => ({
+          product: item._id,
+          quantity: item.quantity,
+        })),
+        address: selectedAddress._id,
+        paymentType: paymentOption,
+      });
 
-        if (data.success) {
-          toast.success(data.message);
-          setCartItems({});
-          navigate('/my-orders');
-        } else {
-          toast.error(data.message);
-        }
+      if (data.success) {
+        toast.success(data.message);
+        setCartItems({});
+        navigate('/my-orders');
       } else {
-        // Place Order with Stripe
-        const { data } = await axios.post('/api/order/stripe', {
-          userId: user._id,
-          items: cartArray.map((item) => ({
-            product: item._id,
-            quantity: item.quantity,
-          })),
-          address: selectedAddress._id,
-        });
-
-        if (data.success) {
-          window.location.replace(data.url);
-        } else {
-          toast.error(data.message);
-        }
+        toast.error(data.message);
       }
     } catch (error) {
       toast.error(error.message);
@@ -113,7 +95,7 @@ const Cart = () => {
   return products.length > 0 && cartItems ? (
     <div className="flex flex-col md:flex-row mt-16">
       <div className='flex-1 max-w-4xl'>
-        <h1 className="font-display text-4xl md:text-5xl leading-[0.96] tracking-[-0.02em] mb-6">
+        <h1 className="section-heading mb-6">
           Shopping Cart <span className="text-sm text-primary font-body">{getCartCount()} Items</span>
         </h1>
 
@@ -212,11 +194,28 @@ const Cart = () => {
 
           <select
             onChange={(e) => setPaymentOption(e.target.value)}
+            value={paymentOption}
             className="w-full border border-accent-mauve/30 bg-bg-ivory px-3 py-2 mt-2 outline-none"
           >
             <option value="COD">Cash On Delivery</option>
-            <option value="Online">Online Payment</option>
+            <option value="JazzCash">JazzCash</option>
           </select>
+
+          {paymentOption === "JazzCash" && (
+            <div className="mt-4 rounded-md border border-accent-mauve/30 bg-white/60 p-4 text-sm text-gray-600">
+              <p className="eyebrow-label text-primary mb-2">JazzCash</p>
+              <p className="text-gray-700">Send payment to:</p>
+              <p className="mt-2 text-lg font-semibold text-primary">03334567069</p>
+              <a
+                href="https://wa.me/03216609565"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-primary hover:underline font-medium"
+              >
+                Send payment screenshot at WhatsApp
+              </a>
+            </div>
+          )}
         </div>
 
         <hr className="border-accent-mauve/20" />
@@ -237,7 +236,7 @@ const Cart = () => {
         </div>
 
         <button onClick={placeOrder} className="w-full py-3 mt-6 cursor-pointer bg-primary text-white font-medium hover:bg-primary-dull transition">
-          {paymentOption === "COD" ? "Place Order" : "Proceed to Checkout"}
+          Place Order
         </button>
       </div>
     </div>

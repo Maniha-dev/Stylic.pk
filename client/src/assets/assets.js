@@ -102,47 +102,48 @@ export const assets = {
 
 export const categories = [
   {
-    text: "Organic veggies",
-    path: "Vegetables",
+    text: "Bracelets",
+    path: "Bracelets",
     image: organic_vegitable_image,
     bgColor: "#E8D6E2",
   },
   {
-    text: "Fresh Fruits",
-    path: "Fruits",
+    text: "Necklaces",
+    path: "Necklaces",
     image: fresh_fruits_image,
     bgColor: "#D9B8C4",
   },
   {
-    text: "Cold Drinks",
-    path: "Drinks",
+    text: "For Men",
+    path: "Men",
+    image: grain_image,
+    bgColor: "#D9B8C4",
+  },
+  {
+    text: "Party & Wedding Jewelry",
+    path: "Party",
     image: bottles_image,
     bgColor: "#B98BAA",
   },
   {
-    text: "Instant Food",
-    path: "Instant",
+    text: "Casual Jewelry",
+    path: "Casual",
     image: maggi_image,
     bgColor: "#FFFDF8",
   },
   {
-    text: "Dairy Products",
-    path: "Dairy",
+    text: "Crochet",
+    path: "Crochet",
     image: dairy_product_image,
     bgColor: "#FFF8ED",
   },
   {
-    text: "Bakery & Breads",
-    path: "Bakery",
+    text: "Couple Bracelets",
+    path: "Couple",
     image: bakery_image,
     bgColor: "#E8D6E2",
   },
-  {
-    text: "Grains & Cereals",
-    path: "Grains",
-    image: grain_image,
-    bgColor: "#D9B8C4",
-  },
+  
 ];
 
 export const footerLinks = [
@@ -205,7 +206,7 @@ export const dummyProducts = [
   {
     _id: "gd46g23h",
     name: "Potato 500g",
-    category: "Vegetables",
+    category: "Bracelets",
     price: 25,
     offerPrice: 20,
     image: [potato_image_1, potato_image_2, potato_image_3, potato_image_4],
@@ -221,7 +222,7 @@ export const dummyProducts = [
   {
     _id: "gd47g34h",
     name: "Tomato 1 kg",
-    category: "Vegetables",
+    category: "Bracelets",
     price: 40,
     offerPrice: 35,
     image: [tomato_image],
@@ -238,7 +239,7 @@ export const dummyProducts = [
   {
     _id: "gd48g45h",
     name: "Carrot 500g",
-    category: "Vegetables",
+    category: "Bracelets",
     price: 30,
     offerPrice: 28,
     image: [carrot_image],
@@ -254,7 +255,7 @@ export const dummyProducts = [
   {
     _id: "gd49g56h",
     name: "Spinach 500g",
-    category: "Vegetables",
+    category: "Bracelets",
     price: 18,
     offerPrice: 15,
     image: [spinach_image_1],
@@ -270,7 +271,7 @@ export const dummyProducts = [
   {
     _id: "gd50g67h",
     name: "Onion 500g",
-    category: "Vegetables",
+    category: "Bracelets",
     price: 22,
     offerPrice: 19,
     image: [onion_image_1],
@@ -288,7 +289,7 @@ export const dummyProducts = [
   {
     _id: "ek51j12k",
     name: "Apple 1 kg",
-    category: "Fruits",
+    category: "Necklaces",
     price: 120,
     offerPrice: 110,
     image: [apple_image],
@@ -306,7 +307,7 @@ export const dummyProducts = [
   {
     _id: "ek52j23k",
     name: "Orange 1 kg",
-    category: "Fruits",
+    category: "Necklaces",
     price: 80,
     offerPrice: 75,
     image: [orange_image],
@@ -322,7 +323,7 @@ export const dummyProducts = [
   {
     _id: "ek53j34k",
     name: "Banana 1 kg",
-    category: "Fruits",
+    category: "Necklaces",
     price: 50,
     offerPrice: 45,
     image: [banana_image_1],
@@ -338,7 +339,7 @@ export const dummyProducts = [
   {
     _id: "ek54j45k",
     name: "Mango 1 kg",
-    category: "Fruits",
+    category: "Necklaces",
 
     price: 150,
     offerPrice: 140,
@@ -355,7 +356,7 @@ export const dummyProducts = [
   {
     _id: "ek55j56k",
     name: "Grapes 500g",
-    category: "Fruits",
+    category: "Necklaces",
     price: 70,
     offerPrice: 65,
     image: [grapes_image_1],
@@ -373,7 +374,7 @@ export const dummyProducts = [
   {
     _id: "ek56j67k",
     name: "Amul Milk 1L",
-    category: "Dairy",
+    category: "Casual Jewelry",
     price: 60,
     offerPrice: 55,
     image: [amul_milk_image],
@@ -390,7 +391,7 @@ export const dummyProducts = [
   {
     _id: "ek57j78k",
     name: "Paneer 200g",
-    category: "Dairy",
+    category: "Casual Jewelry",
     price: 90,
     offerPrice: 85,
     image: [paneer_image],
@@ -406,7 +407,7 @@ export const dummyProducts = [
   {
     _id: "ek58j89k",
     name: "Eggs 12 pcs",
-    category: "Dairy",
+    category: "Casual Jewelry",
     price: 90,
     offerPrice: 85,
     image: [eggs_image],
@@ -422,7 +423,7 @@ export const dummyProducts = [
   {
     _id: "ek59j90k",
     name: "Paneer 200g",
-    category: "Dairy",
+    category: "Casual Jewelry",
     price: 90,
     offerPrice: 85,
     image: [paneer_image_2],
@@ -438,7 +439,7 @@ export const dummyProducts = [
   {
     _id: "ek60j01k",
     name: "Cheese 200g",
-    category: "Dairy",
+    category: "Casual Jewelry",
     price: 140,
     offerPrice: 130,
     image: [cheese_image],
@@ -456,7 +457,7 @@ export const dummyProducts = [
   {
     _id: "ek61j12k",
     name: "Coca-Cola 1.5L",
-    category: "Drinks",
+    category: "For Men",
     price: 80,
     offerPrice: 75,
     image: [coca_cola_image],
@@ -472,7 +473,7 @@ export const dummyProducts = [
   {
     _id: "ek62j23k",
     name: "Pepsi 1.5L",
-    category: "Drinks",
+    category: "For Men",
     price: 78,
     offerPrice: 73,
     image: [pepsi_image],
@@ -488,7 +489,7 @@ export const dummyProducts = [
   {
     _id: "ek63j34k",
     name: "Sprite 1.5L",
-    category: "Drinks",
+    category: "For Men",
     price: 79,
     offerPrice: 74,
     image: [sprite_image_1],
@@ -504,7 +505,7 @@ export const dummyProducts = [
   {
     _id: "ek64j45k",
     name: "Fanta 1.5L",
-    category: "Drinks",
+    category: "For Men",
     price: 77,
     offerPrice: 72,
     image: [fanta_image_1],
@@ -520,7 +521,7 @@ export const dummyProducts = [
   {
     _id: "ek65j56k",
     name: "7 Up 1.5L",
-    category: "Drinks",
+    category: "For Men",
     price: 76,
     offerPrice: 71,
     image: [seven_up_image_1],
@@ -538,7 +539,7 @@ export const dummyProducts = [
   {
     _id: "ek66j67k",
     name: "Basmati Rice 5kg",
-    category: "Grains",
+    category: "Couple",
     price: 550,
     offerPrice: 520,
     image: [basmati_rice_image],
@@ -554,7 +555,7 @@ export const dummyProducts = [
   {
     _id: "ek67j78k",
     name: "Wheat Flour 5kg",
-    category: "Grains",
+    category: "Couple",
     price: 250,
     offerPrice: 230,
     image: [wheat_flour_image],
@@ -570,7 +571,7 @@ export const dummyProducts = [
   {
     _id: "ek68j89k",
     name: "Organic Quinoa 500g",
-    category: "Grains",
+    category: "Couple",
     price: 450,
     offerPrice: 420,
     image: [quinoa_image],
@@ -586,7 +587,7 @@ export const dummyProducts = [
   {
     _id: "ek69j90k",
     name: "Brown Rice 1kg",
-    category: "Grains",
+    category: "Couple",
     price: 120,
     offerPrice: 110,
     image: [brown_rice_image],
@@ -602,7 +603,7 @@ export const dummyProducts = [
   {
     _id: "ek70j01k",
     name: "Barley 1kg",
-    category: "Grains",
+    category: "Couple",
     price: 150,
     offerPrice: 140,
     image: [barley_image],
@@ -620,7 +621,7 @@ export const dummyProducts = [
   {
     _id: "bk01a24z",
     name: "Brown Bread 400g",
-    category: "Bakery",
+    category: "Crochet",
     price: 40,
     offerPrice: 35,
     image: [brown_bread_image],
@@ -636,7 +637,7 @@ export const dummyProducts = [
   {
     _id: "bk02b30y",
     name: "Butter Croissant 100g",
-    category: "Bakery",
+    category: "Crochet",
     price: 50,
     offerPrice: 45,
     image: [butter_croissant_image],
@@ -652,7 +653,7 @@ export const dummyProducts = [
   {
     _id: "bk03c31x",
     name: "Chocolate Cake 500g",
-    category: "Bakery",
+    category: "Crochet",
     price: 350,
     offerPrice: 325,
     image: [chocolate_cake_image],
@@ -668,7 +669,7 @@ export const dummyProducts = [
   {
     _id: "bk04d32w",
     name: "Whole Bread 400g",
-    category: "Bakery",
+    category: "Crochet",
     price: 45,
     offerPrice: 40,
     image: [whole_wheat_bread_image],
@@ -684,7 +685,7 @@ export const dummyProducts = [
   {
     _id: "bk05e33v",
     name: "Vanilla Muffins 6 pcs",
-    category: "Bakery",
+    category: "Crochet",
     price: 100,
     offerPrice: 90,
     image: [vanilla_muffins_image],
@@ -702,7 +703,7 @@ export const dummyProducts = [
   {
     _id: "in01f25u",
     name: "Maggi Noodles 280g",
-    category: "Instant",
+    category: "Party & Wedding Jewelry",
 
     price: 55,
     offerPrice: 50,
@@ -719,7 +720,7 @@ export const dummyProducts = [
   {
     _id: "in02g26t",
     name: "Top Ramen 270g",
-    category: "Instant",
+    category: "Party & Wedding Jewelry",
     price: 45,
     offerPrice: 40,
     image: [top_ramen_image],
@@ -735,7 +736,7 @@ export const dummyProducts = [
   {
     _id: "in03h27s",
     name: "Knorr Cup Soup 70g",
-    category: "Instant",
+    category: "Party & Wedding Jewelry",
     price: 35,
     offerPrice: 30,
     image: [knorr_soup_image],
@@ -751,7 +752,7 @@ export const dummyProducts = [
   {
     _id: "in04i28r",
     name: "Yippee Noodles 260g",
-    category: "Instant",
+    category: "Party & Wedding Jewelry",
     price: 50,
     offerPrice: 45,
     image: [yippee_image],
@@ -767,7 +768,7 @@ export const dummyProducts = [
   {
     _id: "in05j29q",
     name: "Oats Noodles 72g",
-    category: "Instant",
+    category: "Party & Wedding Jewelry",
     price: 40,
     offerPrice: 35,
     image: [maggi_oats_image],
@@ -812,8 +813,8 @@ export const dummyOrders = [
     amount: 89,
     address: dummyAddress[0],
     status: "Order Placed",
-    paymentType: "Online",
-    isPaid: true,
+    paymentType: "JazzCash",
+    isPaid: false,
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
   },
@@ -841,3 +842,4 @@ export const dummyOrders = [
     updatedAt: "2025-03-25T07:17:13.068Z",
   },
 ];
+

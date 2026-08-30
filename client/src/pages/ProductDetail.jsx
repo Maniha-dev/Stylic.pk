@@ -59,7 +59,7 @@ const ProductDetail = () => {
 
                 {/* Product Details */}
                 <div className="text-sm w-full md:w-1/2">
-                    <h1 className="font-display text-5xl md:text-6xl leading-[0.88] tracking-[-0.05em]">{product.name}</h1>
+                    <h1 className="hero-heading text-[clamp(42px,5vw,64px)]">{product.name}</h1>
 
                     {/* Ratings */}
                     <div className="flex items-center gap-0.5 mt-1">

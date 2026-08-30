@@ -45,12 +45,12 @@ const Navbar = () => {
       </NavLink>
 
       <div className="hidden sm:flex items-center gap-8">
-        <NavLink to='/' className="nav-link text-[11px] uppercase tracking-[0.12em] font-medium">Home</NavLink>
-        <NavLink to='/products' className="nav-link text-[11px] uppercase tracking-[0.12em] font-medium">All Product</NavLink>
-        <NavLink to='/' className="nav-link text-[11px] uppercase tracking-[0.12em] font-medium">Contact</NavLink>
+        <NavLink to='/' className="nav-link uppercase">Home</NavLink>
+        <NavLink to='/products' className="nav-link uppercase">All Product</NavLink>
+        <NavLink to='/' className="nav-link uppercase">Contact</NavLink>
 
         <div className="hidden lg:flex items-center text-sm gap-2 border border-accent-mauve/30 px-3 rounded-full">
-          <input
+          <input  
             onChange={(e) => setSearchQuery(e.target.value)}
             className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500"
             type="text"

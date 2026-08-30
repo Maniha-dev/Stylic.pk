@@ -14,7 +14,7 @@ const ProductCard = ({product}) => {
             </div>
             <div className="text-gray-500/60 text-sm">
                 <p>{product.category}</p>
-                <p className="text-gray-700 font-display text-[1.8rem] md:text-[2rem] leading-[0.98] tracking-[-0.04em] truncate w-full">{product.name}</p>
+                <p className="product-name text-gray-700 truncate w-full">{product.name}</p>
                 <div className="flex items-center gap-0.5">
                     {Array(5).fill('').map((_, i) => (
                         
