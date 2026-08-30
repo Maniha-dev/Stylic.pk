@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import search_icon from "./search_icon.svg";
 import remove_icon from "./remove_icon.svg";
 import arrow_right_icon_colored from "./arrow_right_icon_colored.svg";
@@ -20,7 +20,7 @@ import box_icon from "./box_icon.svg";
 import trust_icon from "./trust_icon.svg";
 import black_arrow_icon from "./black_arrow_icon.svg";
 import white_arrow_icon from "./white_arrow_icon.svg";
-import main_banner_bg from "./main_banner_bg.png";
+import main_banner_bg from "./main_banner_bg.jpg";
 import main_banner_bg_sm from "./main_banner_bg_sm.png";
 import bottom_banner_image from "./bottom_banner_image.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
@@ -105,43 +105,43 @@ export const categories = [
     text: "Organic veggies",
     path: "Vegetables",
     image: organic_vegitable_image,
-    bgColor: "#FEF6DA",
+    bgColor: "#E8D6E2",
   },
   {
     text: "Fresh Fruits",
     path: "Fruits",
     image: fresh_fruits_image,
-    bgColor: "#FEE0E0",
+    bgColor: "#D9B8C4",
   },
   {
     text: "Cold Drinks",
     path: "Drinks",
     image: bottles_image,
-    bgColor: "#F0F5DE",
+    bgColor: "#B98BAA",
   },
   {
     text: "Instant Food",
     path: "Instant",
     image: maggi_image,
-    bgColor: "#E1F5EC",
+    bgColor: "#FFFDF8",
   },
   {
     text: "Dairy Products",
     path: "Dairy",
     image: dairy_product_image,
-    bgColor: "#FEE6CD",
+    bgColor: "#FFF8ED",
   },
   {
     text: "Bakery & Breads",
     path: "Bakery",
     image: bakery_image,
-    bgColor: "#E0F6FE",
+    bgColor: "#E8D6E2",
   },
   {
     text: "Grains & Cereals",
     path: "Grains",
     image: grain_image,
-    bgColor: "#F1E3F9",
+    bgColor: "#D9B8C4",
   },
 ];
 

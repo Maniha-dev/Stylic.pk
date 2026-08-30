@@ -87,7 +87,7 @@ const AddProduct = () => {
             id="product-name"
             type="text"
             placeholder="Type here"
-            className="outline-none py-2 px-3 rounded border border-gray-500/40"
+            className="outline-none py-2 px-3 rounded border border-accent-mauve/30"
             required
           />
         </div>
@@ -99,7 +99,7 @@ const AddProduct = () => {
             value={description}
             id="product-description"
             rows={4}
-            className="outline-none py-2 px-3 rounded border border-gray-500/40 resize-none"
+            className="outline-none py-2 px-3 rounded border border-accent-mauve/30 resize-none"
             placeholder="Type here"
           ></textarea>
         </div>
@@ -110,7 +110,7 @@ const AddProduct = () => {
             onChange={(e) => setCategory(e.target.value)}
             value={category}
             id="category"
-            className="outline-none py-2 px-3 rounded border border-gray-500/40"
+            className="outline-none py-2 px-3 rounded border border-accent-mauve/30"
           >
             <option value="">Select Category</option>
             {categories.map((item, index) => (
@@ -128,7 +128,7 @@ const AddProduct = () => {
               id="product-price"
               type="number"
               placeholder="0"
-              className="outline-none py-2 px-3 rounded border border-gray-500/40"
+              className="outline-none py-2 px-3 rounded border border-accent-mauve/30"
               required
             />
           </div>
@@ -140,7 +140,7 @@ const AddProduct = () => {
               id="offer-price"
               type="number"
               placeholder="0"
-              className="outline-none py-2 px-3 rounded border border-gray-500/40"
+              className="outline-none py-2 px-3 rounded border border-accent-mauve/30"
               required
             />
           </div>

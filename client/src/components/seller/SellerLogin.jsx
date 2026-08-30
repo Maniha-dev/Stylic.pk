@@ -32,7 +32,7 @@ const SellerLogin = () => {
 
     return !isSeller && (
         <form onSubmit={onSubmitHandler} className='min-h-screen flex items-center text-sm text-gray-600'>
-            <div className="flex flex-col gap-5 m-auto items-start p-8 py-12 min-w-80 sm:min-w-88 rounded-lg shadow-xl border border-gray-200">
+            <div className="flex flex-col gap-5 m-auto items-start p-8 py-12 min-w-80 sm:min-w-88 rounded-lg shadow-xl border border-accent-mauve/20 bg-bg-ivory">
                 <p className="text-2xl font-medium m-auto">
                     <span className="text-primary">Seller</span> Login
                 </p>
@@ -43,7 +43,7 @@ const SellerLogin = () => {
                         value={email}
                         type="email"
                         placeholder="enter your email"
-                        className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"
+                        className="border border-accent-mauve/30 rounded w-full p-2 mt-1 outline-primary"
                         required
                     />
                 </div>
@@ -54,7 +54,7 @@ const SellerLogin = () => {
                         value={password}
                         type="password"
                         placeholder="enter your password"
-                        className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"
+                        className="border border-accent-mauve/30 rounded w-full p-2 mt-1 outline-primary"
                         required
                     />
                 </div>

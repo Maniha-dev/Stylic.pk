@@ -7,8 +7,15 @@
 }
 
 @theme {
-  --color-primary: #4fbf8b;
-  --color-primary-dull: #44ae7c;
+  --color-primary: #5A2850;
+  --color-primary-dull: #3D1A34;
+  --color-accent-mauve: #B98BAA;
+  --color-accent-rose: #D9B8C4;
+  --color-accent-gold: #D8B56A;
+  --color-text-dark: #292027;
+  --color-bg-cream: #FFF8ED;
+  --color-bg-ivory: #FFFDF8;
+  --color-bg-pale-plum: #E8D6E2;
 }
 
 .no-scrollbar::-webkit-scrollbar{

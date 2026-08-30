@@ -30,7 +30,7 @@ const MyOrders = () => {
       </div>
 
       {myOrders.map((order, index) => (
-        <div key={index} className='border border-gray-300 rounded-lg mb-10 p-4 py-5 max-w-4xl'>
+        <div key={index} className='border border-accent-mauve/20 rounded-lg mb-10 p-4 py-5 max-w-4xl'>
           <p className='flex justify-between md:items-center text-gray-400 md:font-medium max-md:flex-col'>
             <span>OrderId: {order._id}</span>
             <span>Payment: {order.paymentType}</span>
@@ -40,9 +40,9 @@ const MyOrders = () => {
           {order.items.map((item, index) => (
             <div
               key={index}
-              className={`relative bg-white text-gray-500/70 ${
+              className={`relative bg-bg-ivory text-gray-500/70 ${
                 order.items.length !== index + 1 && "border-b"
-              } border-gray-300 flex flex-col md:flex-row md:items-center justify-between p-4 py-5 md:gap-16 w-full max-w-4xl`}
+              } border-accent-mauve/20 flex flex-col md:flex-row md:items-center justify-between p-4 py-5 md:gap-16 w-full max-w-4xl`}
             >
               <div className='flex items-center mb-4 md:mb-0'>
                 <div className='bg-primary/10 p-4 rounded-lg'>

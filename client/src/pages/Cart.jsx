@@ -131,7 +131,7 @@ const Cart = () => {
                   navigate(`/products/${product.category.toLowerCase()}/${product._id}`);
                   scrollTo(0, 0);
                 }}
-                className="cursor-pointer w-24 h-24 flex items-center justify-center border border-gray-300 rounded"
+                className="cursor-pointer w-24 h-24 flex items-center justify-center border border-accent-mauve/30 rounded"
               >
                 <img className="max-w-full h-full object-cover" src={product.image[0]} alt={product.name} />
               </div>
@@ -172,9 +172,9 @@ const Cart = () => {
         </button>
       </div>
 
-      <div className="max-w-[360px] w-full bg-gray-100/40 p-5 max-md:mt-16 border border-gray-300/70">
+      <div className="max-w-[360px] w-full bg-accent-mauve/10 p-5 max-md:mt-16 border border-accent-mauve/20">
         <h2 className="text-xl md:text-xl font-medium">Order Summary</h2>
-        <hr className="border-gray-300 my-5" />
+        <hr className="border-accent-mauve/20 my-5" />
 
         <div className="mb-6">
           <p className="text-sm font-medium uppercase">Delivery Address</p>
@@ -188,12 +188,12 @@ const Cart = () => {
               Change
             </button>
             {showAddress && (
-              <div className="absolute top-12 py-1 bg-white border border-gray-300 text-sm w-full">
+              <div className="absolute top-12 py-1 bg-bg-ivory border border-accent-mauve/20 text-sm w-full">
                 {addresses.map((address, index) => (
                   <p
                     key={index}
                     onClick={() => { setSelectedAddress(address); setShowAddress(false); }}
-                    className="text-gray-500 p-2 hover:bg-gray-100"
+                    className="text-gray-500 p-2 hover:bg-accent-mauve/10"
                   >
                     {address.street}, {address.city}, {address.state}, {address.country}
                   </p>
@@ -212,14 +212,14 @@ const Cart = () => {
 
           <select
             onChange={(e) => setPaymentOption(e.target.value)}
-            className="w-full border border-gray-300 bg-white px-3 py-2 mt-2 outline-none"
+            className="w-full border border-accent-mauve/30 bg-bg-ivory px-3 py-2 mt-2 outline-none"
           >
             <option value="COD">Cash On Delivery</option>
             <option value="Online">Online Payment</option>
           </select>
         </div>
 
-        <hr className="border-gray-300" />
+        <hr className="border-accent-mauve/20" />
 
         <div className="text-gray-500 mt-4 space-y-2">
           <p className="flex justify-between">

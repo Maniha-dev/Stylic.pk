@@ -45,14 +45,14 @@ const ProductDetail = () => {
                             <div 
                                 key={index} 
                                 onClick={() => setThumbnail(image)} 
-                                className="border max-w-24 border-gray-500/30 rounded overflow-hidden cursor-pointer"
+                                className="border max-w-24 border-accent-mauve/30 rounded overflow-hidden cursor-pointer"
                             >
                                 <img src={image} alt={`Thumbnail ${index + 1}`} />
                             </div>
                         ))}
                     </div>
 
-                    <div className="border border-gray-500/30 max-w-100 rounded overflow-hidden">
+                    <div className="border border-accent-mauve/30 max-w-100 rounded overflow-hidden">
                         <img src={thumbnail} alt="Selected product" className="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -93,7 +93,7 @@ const ProductDetail = () => {
                     <div className="flex items-center mt-10 gap-4 text-base">
                         <button 
                             onClick={() => addToCart(product._id)} 
-                            className="w-full py-3.5 cursor-pointer font-medium bg-gray-100 text-gray-800/80 hover:bg-gray-200 transition"
+                            className="w-full py-3.5 cursor-pointer font-medium bg-accent-mauve/10 text-primary hover:bg-accent-mauve/20 transition"
                         >
                             Add to Cart
                         </button>

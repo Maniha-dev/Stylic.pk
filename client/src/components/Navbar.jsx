@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [searchQuery]);
 
   return (
-    <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative z-40 transition-all">
+    <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-accent-mauve/30 bg-bg-cream relative z-40 transition-all">
       <NavLink to='/' onClick={() => setOpen(false)}>
         <img className="h-9" src={assets.logo} alt="logo" />
       </NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
         <NavLink to='/products'>All Product</NavLink>
         <NavLink to='/'>Contact</NavLink>
 
-        <div className="hidden lg:flex items-center text-sm gap-2 border border-gray-300 px-3 rounded-full">
+        <div className="hidden lg:flex items-center text-sm gap-2 border border-accent-mauve/30 px-3 rounded-full">
           <input
             onChange={(e) => setSearchQuery(e.target.value)}
             className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500"
@@ -76,7 +76,7 @@ const Navbar = () => {
         ) : (
           <div className='relative group'>
             <img src={assets.profile_icon} className='w-10' alt="" />
-            <ul className="hidden group-hover:block absolute top-10 right-0 bg-white shadow border border-gray-200 py-2.5 w-30 rounded-md text-sm z-40">
+            <ul className="hidden group-hover:block absolute top-10 right-0 bg-bg-cream shadow border border-accent-mauve/20 py-2.5 w-30 rounded-md text-sm z-40">
               <li onClick={() => navigate("my-orders")} className="p-1.5 pl-3 hover:bg-primary/10 cursor-pointer">
                 My Orders
               </li>
@@ -102,7 +102,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex flex-col items-start gap-2 px-5 text-sm md:hidden z-50">
+        <div className="absolute top-[60px] left-0 w-full bg-bg-cream shadow-md py-4 flex flex-col items-start gap-2 px-5 text-sm md:hidden z-50">
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/products" onClick={() => setOpen(false)}>All Product</NavLink>
           {user && <NavLink to="/my-orders" onClick={() => setOpen(false)}>My Orders</NavLink>}
