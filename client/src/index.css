@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
-*{
-  font-family: "Outfit", sans-serif;
-}
-
 @theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+
   --color-primary: #5A2850;
   --color-primary-dull: #3D1A34;
   --color-accent-mauve: #B98BAA;
@@ -18,6 +16,90 @@
   --color-bg-pale-plum: #E8D6E2;
 }
 
-.no-scrollbar::-webkit-scrollbar{
+:root {
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+html,
+body,
+#root {
+  font-family: var(--font-body);
+}
+
+body {
+  color: #292027;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+p,
+span,
+a,
+button,
+input,
+label,
+li,
+textarea,
+select,
+.font-body {
+  font-family: var(--font-body);
+}
+
+.section-heading,
+.product-name,
+.hero-heading,
+.eyebrow-label {
+  font-family: var(--font-display);
+}
+
+.section-heading {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-size: clamp(2.3rem, 3vw, 3.4rem);
+}
+
+.hero-heading {
+  font-size: clamp(3.1rem, 4.8vw, 6.2rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+}
+
+.eyebrow-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+button,
+.nav-link,
+.ui-label {
+  font-family: var(--font-body);
+  letter-spacing: 0.08em;
+}
+
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }

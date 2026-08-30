@@ -59,7 +59,7 @@ const ProductDetail = () => {
 
                 {/* Product Details */}
                 <div className="text-sm w-full md:w-1/2">
-                    <h1 className="text-3xl font-medium">{product.name}</h1>
+                    <h1 className="font-display text-5xl md:text-6xl leading-[0.88] tracking-[-0.05em]">{product.name}</h1>
 
                     {/* Ratings */}
                     <div className="flex items-center gap-0.5 mt-1">
@@ -109,7 +109,7 @@ const ProductDetail = () => {
             {/* --------- related products ------------ */}
             <div className="flex flex-col items-center mt-20">
                 <div className="flex flex-col items-center w-max">
-                    <p className="text-3xl font-medium">Related Products</p>
+                    <p className="section-heading text-4xl">Related Products</p>
                        <div className="w-20 h-0.5 bg-primary rounded-full mt-2"></div>
                 </div>
                 

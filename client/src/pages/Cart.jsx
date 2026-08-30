@@ -113,8 +113,8 @@ const Cart = () => {
   return products.length > 0 && cartItems ? (
     <div className="flex flex-col md:flex-row mt-16">
       <div className='flex-1 max-w-4xl'>
-        <h1 className="text-3xl font-medium mb-6">
-          Shopping Cart <span className="text-sm text-primary">{getCartCount()} Items</span>
+        <h1 className="font-display text-4xl md:text-5xl leading-[0.96] tracking-[-0.02em] mb-6">
+          Shopping Cart <span className="text-sm text-primary font-body">{getCartCount()} Items</span>
         </h1>
 
         <div className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
@@ -136,7 +136,7 @@ const Cart = () => {
                 <img className="max-w-full h-full object-cover" src={product.image[0]} alt={product.name} />
               </div>
               <div>
-                <p className="hidden md:block font-semibold">{product.name}</p>
+                <p className="hidden md:block font-display text-[1.8rem] leading-[1.05] tracking-[-0.02em] text-gray-800">{product.name}</p>
                 <div className="font-normal text-gray-500/70">
                   <p>
                     Weight: <span>{product.weight || "N/A"}</span>
@@ -177,7 +177,7 @@ const Cart = () => {
         <hr className="border-accent-mauve/20 my-5" />
 
         <div className="mb-6">
-          <p className="text-sm font-medium uppercase">Delivery Address</p>
+          <p className="eyebrow-label text-primary">Delivery Address</p>
           <div className="relative flex justify-between items-start mt-2">
             <p className="text-gray-500">
               {selectedAddress
@@ -208,7 +208,7 @@ const Cart = () => {
             )}
           </div>
 
-          <p className="text-sm font-medium uppercase mt-6">Payment Method</p>
+          <p className="eyebrow-label text-primary mt-6">Payment Method</p>
 
           <select
             onChange={(e) => setPaymentOption(e.target.value)}
