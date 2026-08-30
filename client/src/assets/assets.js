@@ -25,13 +25,8 @@ import main_banner_bg_sm from "./main_banner_bg_sm.png";
 import bottom_banner_image from "./bottom_banner_image.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
 import add_address_image from "./add_address_image.svg";
-import organic_vegitable_image from "./organic_vegitable_image.png";
-import fresh_fruits_image from "./fresh_fruits_image.png";
-import bottles_image from "./bottles_image.png";
+import bracelet from "./bracelet.png";
 import maggi_image from "./maggi_image.png";
-import dairy_product_image from "./dairy_product_image.png";
-import bakery_image from "./bakery_image.png";
-import grain_image from "./grain_image.png";
 import potato_image_1 from "./potato_image_1.png";
 import potato_image_2 from "./potato_image_2.png";
 import potato_image_3 from "./potato_image_3.png";
@@ -69,6 +64,12 @@ import vanilla_muffins_image from "./vanilla_muffins_image.png";
 import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
+import necklace from "./necklace.png";
+import men from "./men.png";
+import party from "./party.png";
+import crochet from "./crochet.png";
+import couple from "./couple.png";
+
 
 export const assets = {
   logo,
@@ -104,46 +105,35 @@ export const categories = [
   {
     text: "Bracelets",
     path: "Bracelets",
-    image: organic_vegitable_image,
+    image: bracelet,
     bgColor: "#E8D6E2",
   },
   {
     text: "Necklaces",
     path: "Necklaces",
-    image: fresh_fruits_image,
-    bgColor: "#D9B8C4",
+    image: necklace,
+    bgColor: "#E8D6E2",
   },
   {
     text: "For Men",
     path: "Men",
-    image: grain_image,
-    bgColor: "#D9B8C4",
+    image: men,
+    bgColor: "#E8D6E2",
   },
-  {
-    text: "Party & Wedding Jewelry",
-    path: "Party",
-    image: bottles_image,
-    bgColor: "#B98BAA",
-  },
-  {
-    text: "Casual Jewelry",
-    path: "Casual",
-    image: maggi_image,
-    bgColor: "#FFFDF8",
-  },
-  {
-    text: "Crochet",
-    path: "Crochet",
-    image: dairy_product_image,
-    bgColor: "#FFF8ED",
-  },
-  {
+   {
     text: "Couple Bracelets",
     path: "Couple",
-    image: bakery_image,
+    image: couple,
     bgColor: "#E8D6E2",
   },
   
+  {
+    text: "Crochet",
+    path: "Crochet",
+    image: crochet,
+    bgColor: "#E8D6E2",
+  },
+ 
 ];
 
 export const footerLinks = [
