@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const databaseName = 'greencart';
+const databaseName = 'stylic';
 let connectionPromise;
 
 const getMongoUri = () => {
