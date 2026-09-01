@@ -9,7 +9,7 @@ const verificationCodeLifetime = 10 * 60 * 1000;
 const resendCooldown = 60 * 1000;
 
 const sendVerificationEmail = (email, otp) => transporter.sendMail({
-    from: process.env.EMAIL_USER,
+    from: `"Stylic" <${process.env.EMAIL_USER}>`,
     to: email,
     subject: 'Verify your Stylic email',
     text: `Your Stylic verification code is ${otp}. It expires in 10 minutes.`,
