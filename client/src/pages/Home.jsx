@@ -2,7 +2,7 @@ import React from "react"
 import MainBanner from "../components/MainBanner"
 import Categories from"../components/Categories"
 import BestSeller from "../components/BestSeller"
-import BottomBanner from "../components/BottomBanner"
+// import BottomBanner from "../components/BottomBanner"
 import Newsletter from "../components/Newsletter"
 
 
@@ -12,7 +12,7 @@ const Home = () =>{
             <MainBanner/>
             <Categories/>
             <BestSeller/>
-            <BottomBanner/>
+            {/* <BottomBanner/> */}
             <Newsletter/>
             
             

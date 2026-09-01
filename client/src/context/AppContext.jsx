@@ -41,10 +41,14 @@ export const AppContextProvider = ({ children }) => {
             const { data } = await axios.get('/api/user/is-auth');
             if (data.success) {
                 setUser(data.user);
-                setCartItems(data.user.cartItems);
+                setCartItems(data.user.cartItems || {});
+            } else {
+                setUser(null);
+                setCartItems({});
             }
         } catch (error) {
             setUser(null);
+            setCartItems({});
         }
     };
 

@@ -17,6 +17,11 @@ const Login = () => {
       const { data } = await axios.post(`/api/user/${state}`, { name, email, password });
 
       if (data.success) {
+        if (state === "register") {
+          navigate('/verify-email', { state: { email } });
+          setShowUserLogin(false);
+          return;
+        }
         navigate('/');
         setUser(data.user);
         setShowUserLogin(false);
